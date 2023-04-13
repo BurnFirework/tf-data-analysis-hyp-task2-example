@@ -8,5 +8,5 @@ chat_id = 860138765
 
 def solution(x: np.array, y: np.array) -> bool:
     imp_crit = 0.03
-    t, p_value = ttest_ind(x, y, equal_var=False)
+    t, p_value = ttest_ind(x, y)
     return (not (p_value < imp_crit))
